@@ -1,0 +1,218 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* general settings */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* color variable */
+:root{
+    --primary-color:#dbb8ff;
+    --secondary-one:#f5f6f7;
+    --secondary-color:#0a0a23;
+    --color--bg-input:#fff;
+    --light-green:#acd157;
+    --dark-green:#00471b;
+    --font-type: 'Roboto', sans-serif;
+    --font-type-2: 'Lato', sans-serif;
+}
+
+/* Typography */
+body{
+    background-color: var(--secondary-one);
+    font-family: var(--font-type);
+
+}
+#hero{
+    text-align: center;
+    margin: 2em auto;
+}
+#title{
+    margin-bottom: 1em;
+    color: #99c9ff;
+    text-transform: capitalize;
+}
+#subtitle{
+    font-family: var(--font-type-2);
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+
+form{
+    margin:  0 auto;
+    width: 60vw;
+    max-width: 500px;
+    padding-bottom: 1.5em;
+    min-width: 300px;
+    background-color:var(--secondary-color);
+    box-shadow: 0 0 10px rgb(0,0, 0,0.3);
+    color: #ffff;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+fieldset{
+    padding: 2em 0;
+    margin-left: 1em;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+fieldset:last-of-type{
+    border: none;
+}
+input, textarea {
+    background-color:var(--color--bg-input);
+    border: 1px solid #0a0a23;
+    color: var(--secondary-color);
+    /* height: 2px; */
+  }
+  .apply{
+    font-weight: 300;
+    color: #f956d7;
+    font-style: italic;
+
+  }
+
+
+
+
+
+.inline{
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+input[type="submit"]{
+    background-color: var(--light-green);
+    padding: 10pxem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    display: block;
+    width: 70%;
+    margin: 1em auto;
+}
+#submit-btn:hover{
+    background-color: var(--dark-green);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }

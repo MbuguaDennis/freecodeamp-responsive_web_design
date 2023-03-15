@@ -7,20 +7,27 @@
     <!-- linking css with html file -->
     <link rel="stylesheet" href="index.css">
     <title>Survey Form Webpage</title>
+    <!-- adding google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Oxygen&family=Poppins:ital,wght@0,500;0,600;0,700;
+    0,800;1,500&family=Roboto+Flex:wght@500;600;700&family=Roboto:wght@300;400;500;700&display=swap" 
+    rel="stylesheet">
+
 </head>
 <body>
 <main class="main-content">
 
     <Section id="hero">
         <h1 id="title">freecodecamp survey form</h1>
-        <p id="description">Thankyou for taking time to help us improve our platform</p>
+        <p id="subtitle">Thankyou for taking time to help us improve our platform</p>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     </Section>
 
 
 
     <!-- form element starts here -->
-    <Section id="Form-section">
-<div class="form-container">
     <form id="survey-form">
         <fieldset>
             <label for="name-label">Name</label>
@@ -30,13 +37,13 @@
                 <input id="email-label" required placeholder="enter your email" />
 
             <label for="number-label"> Age(optional) </label>
-                <input  type="number-label" min="13" max="120" id="number" placeholder="my age" required/> 
+                <input  type="number"  min="13" max="120" id="number" placeholder="my age" required/> 
 
         </fieldset>
 
   <!-- fieldset for select and chekboxes -->
         <fieldset>
-            <label for="your-role">Which best describes your current role? </label>
+            <label for="your-role">Which best describes your current role?
                 <select id="your-role">
                      <option disabled selected value>select current role</option>
                     <option value="1">student</option>
@@ -45,13 +52,16 @@
                     <option value="4">Prefer not to say</option>
                      <option value="5">Other</option>
                 </select>
+            </label>
            
 
-             <label>Would you recommend freecodecamp to a friend? </label>
-                <input type="radio" name="recommend-type" /> Definitely
-                <input type="radio" name="recommend-type" /> Maybe
-                <input type="radio" name="recommend-type" /> Not Sure
-            
+             <label for="recommend"></label>Would you recommend freecodecamp to a friend?  </label>
+              <label for="recommend"><input class="inline" type="radio" name="recommend-type" /> Definitely </label>
+              <label for="recommend"><input class="inline" type="radio" name="recommend-type" /> Maybe </label>
+              <label for="recommend"> <input class="inline" type="radio" name="recommend-type" /> Not Sure </label>
+
+           
+        
         </fieldset>
 
   <!-- fieldset ends -->
@@ -65,18 +75,20 @@
             <option value="5">Youtube tutorials</option>
 
         </select>
-        <label for="improve">What would you like us to improve <span class="apply">(check all that apply)</span></label>
-        <input type="checkbox" id="improve" name="improve" />Front-end Projects
-        <input type="checkbox" id="improve" name="improve" />Back-end Projects
-        <input type="checkbox" id="improve" name="improve" />Data Visualization
-        <input type="checkbox" id="improve" name="improve" />Challenges
-        <input type="checkbox" id="improve" name="improve" />Open Source Community
-        <input type="checkbox" id="improve" name="improve" />Gitter help rooms
-        <input type="checkbox" id="improve" name="improve" />Videos
-        <input type="checkbox" id="improve" name="improve" />City Meetups
-        <input type="checkbox" id="improve" name="improve" />Wiki
-        <input type="checkbox" id="improve" name="improve" />Forum
-        <input type="checkbox" id="improve" name="improve" />Additional Courses
+        <label for="improve">What would you like us to improve <span class="apply">(check all that apply)</span>
+        </label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve" class="inline" />Front-end Projects</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Back-end Projects</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Data Visualization</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Challenges</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Open Source Community</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Gitter help rooms</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Videos</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />City Meetups</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Wiki</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Forum</label>
+        <label for="improve"><input type="checkbox" id="improve" name="improve"class="inline" />Additional Courses</label>
+    
 
 
 
@@ -93,11 +105,11 @@
 
 
 </form>
-</div>
-</Section>
+
 
 
 </main>
+
 
 
 
