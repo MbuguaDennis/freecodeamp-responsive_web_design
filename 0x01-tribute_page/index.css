@@ -1,0 +1,223 @@
+/* css reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Typography */
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    background-color: #f5f6f7;
+
+
+}
+.hero{
+    margin:0 auto;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #dfdfe2;
+}
+.hero-title{
+    padding:1em 0;
+    font-size: 2.5rem;
+
+}
+.hero-subtitle{
+    margin:0.2em 0; 
+    font-size: 1.125rem;
+    letter-spacing: 1.1;
+    text-transform: capitalize;
+
+}
+.image-section{
+    width: 90%;
+    background-color: #fff;
+    margin: 1em auto;
+    text-align: center;
+    box-shadow: 0 0 20px #333;
+    border-radius: 5px;
+    
+
+}
+#image{
+    height: 60%;
+    width: 60%;
+    max-width: 250px;
+    padding: 1em;
+    max-height: 300px;
+   
+}
+figure{
+    padding: 1em;
+}
+figcaption{
+    padding-bottom: 1em;
+    margin:0  0 1.5em;
+}
+profile-section{
+    width: 100%;
+}
+.profile-title{
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em 0;
+}
+.profile-container{
+    padding: 3em;
+}
+.profile-container ul li{
+    margin-top: 0.55em;
+    width: 90%;
+    max-width: 600px;
+    margin: 0.5em auto;
+
+}
+.profile-container ul li p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.25em;
+    margin-left: 0.11em;
+}
+.bold{
+    margin-left: .15em;
+    font-weight: 800;
+
+}
+article{
+    text-align: center;
+    padding: 1.1em;
+}
+blockquote{
+    margin-top: 1em;
+    font-style: italic;
+}
+blockquote::before{
+    content: "Modi quote- #1";
+    color: #fe0101;
+}
+#external-link{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1.2em;
+}
+a{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 0.3em;
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+a:hover{
+    background-color: #f5f6f7;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
